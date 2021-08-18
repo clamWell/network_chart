@@ -1,35 +1,40 @@
+var ieTest = false,
+	screenWidth = $(window).width(),
+	screenHeight = $(window).height(),
+	imgURL = "http://img.khan.co.kr/spko/storytelling/2021/network/",
+	isMobile = screenWidth <= 800 && true || false,
+	isNotebook = (screenWidth <= 1300 && screenHeight < 750) && true || false,
+	isMobileLandscape = ( screenWidth > 400 && screenWidth <= 800 && screenHeight < 450 ) && true || false;
+	
+window.onbeforeunload = function(){ window.scrollTo(0, 0) ;}
+
+function avoid100vh(){
+	$(".fixed-holder").height(screenHeight);
+	$(".spacer").height(screenHeight);
+	$(".loading-page").height(screenHeight);
+	$(".ie-block").height(screenHeight);
+}
+
+
+/******** 모바일 전용 조정 ********/
+if(isMobile==true){
+	$("body").css({"height":screenHeight});
+	$(".going-down span").html("클릭해주세요")
+	$(".item--01 .img-layer > img").attr("src", "img/con-photo-00-m.jpg");
+	$(".item--02 .img-layer > img").attr("src", "img/con-photo-01-m.jpg");
+	$(".item--03 .img-layer > img").attr("src", "img/con-photo-02-m.jpg");
+	$(".item--04 .img-layer > img").attr("src", "img/con-photo-03-m.jpg");
+	$(".item--06 .img-layer > img").attr("src", "img/con-photo-04-m.jpg");       
+	$(".item--07 .img-layer > img").attr("src", "img/con-photo-05-m.jpg");
+	$(".item--08 .img-layer > img").attr("src", "img/con-photo-06-m.jpg");
+	$(".item--09 .img-layer > img").attr("src", "img/con-photo-07-m.jpg");
+	avoid100vh();
+}
+/******** 모바일 전용 조정 ********/
+
 $(function(){
-	var ieTest = false,
-		screenWidth = $(window).width(),
-		screenHeight = $(window).height(),
-		imgURL = "http://img.khan.co.kr/spko/storytelling/2021/network/",
-		isMobile = screenWidth <= 800 && true || false,
-		isNotebook = (screenWidth <= 1300 && screenHeight < 750) && true || false,
-		isMobileLandscape = ( screenWidth > 400 && screenWidth <= 800 && screenHeight < 450 ) && true || false;
-	window.onbeforeunload = function(){ window.scrollTo(0, 0) ;}
+	
 
-	function avoid100vh(){
-        $(".fixed-holder").height(screenHeight);
-		$(".spacer").height(screenHeight);
-		$(".loading-page").height(screenHeight);
-		$(".ie-block").height(screenHeight);
-	}
-
-	/******** 모바일 전용 조정 ********/
-	if(isMobile==true){
-		$("body").css({"height":screenHeight});
-		$(".going-down span").html("클릭해주세요")
-		$(".item--01 .img-layer > img").attr("src", "img/con-photo-00-m.jpg");
-		$(".item--02 .img-layer > img").attr("src", "img/con-photo-01-m.jpg");
-		$(".item--03 .img-layer > img").attr("src", "img/con-photo-02-m.jpg");
-		$(".item--04 .img-layer > img").attr("src", "img/con-photo-03-m.jpg");
-		$(".item--06 .img-layer > img").attr("src", "img/con-photo-04-m.jpg");       
-		$(".item--07 .img-layer > img").attr("src", "img/con-photo-05-m.jpg");
-		$(".item--08 .img-layer > img").attr("src", "img/con-photo-06-m.jpg");
-		$(".item--09 .img-layer > img").attr("src", "img/con-photo-07-m.jpg");
-		avoid100vh();
-	}
-	/******** 모바일 전용 조정 ********/
 
 	var randomRange = function(n1, n2) {
 		return Math.floor((Math.random() * (n2 - n1 + 1)) + n1);
