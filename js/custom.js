@@ -7,13 +7,38 @@ $(function(){
 		isNotebook = (screenWidth <= 1300 && screenHeight < 750) && true || false,
 		isMobileLandscape = ( screenWidth > 400 && screenWidth <= 800 && screenHeight < 450 ) && true || false;
 	window.onbeforeunload = function(){ window.scrollTo(0, 0) ;}
+
+	function avoid100vh(){
+        $(".fixed-holder").height(screenHeight);
+		$(".spacer").height(screenHeight);
+		$(".loading-page").height(screenHeight);
+		$(".ie-block").height(screenHeight);
+	}
+
+	/******** 모바일 전용 조정 ********/
+	if(isMobile==true){
+		$("body").css({"height":screenHeight});
+		$(".going-down span").html("클릭해주세요")
+		$(".item--01 .img-layer > img").attr("src", "img/con-photo-00-m.jpg");
+		$(".item--02 .img-layer > img").attr("src", "img/con-photo-01-m.jpg");
+		$(".item--03 .img-layer > img").attr("src", "img/con-photo-02-m.jpg");
+		$(".item--04 .img-layer > img").attr("src", "img/con-photo-03-m.jpg");
+		$(".item--06 .img-layer > img").attr("src", "img/con-photo-04-m.jpg");       
+		$(".item--07 .img-layer > img").attr("src", "img/con-photo-05-m.jpg");
+		$(".item--08 .img-layer > img").attr("src", "img/con-photo-06-m.jpg");
+		$(".item--09 .img-layer > img").attr("src", "img/con-photo-07-m.jpg");
+		avoid100vh();
+	}
+	/******** 모바일 전용 조정 ********/
+
 	var randomRange = function(n1, n2) {
 		return Math.floor((Math.random() * (n2 - n1 + 1)) + n1);
 	};
 	$(window).resize(function() {
 		screenWidth = $(window).width();
-		screenHeight = $(window).height();
+		//screenHeight = $(window).height();
 		checkIfProgressOverflow(screenWidth )
+		//avoid100vh();
     });
 
 	function checkIfProgressOverflow(sw){
@@ -157,12 +182,18 @@ $(function(){
 
 	function settingFixedElPos(){
 		var $horizon_img = $(".slider-item .vrt-align-center");
-        $horizon_img.css({"height": 15*33+"px"});
-		$horizon_img.each(function(){
-			var y = screenHeight*0.5 - $(this).height()*0.5;
-			$(this).css({"top": y+"px" });
-
-		})
+		if(isMobile==false){
+			$horizon_img.css({"height": 15*33+"px"});
+			$horizon_img.each(function(){
+				var y = screenHeight*0.5 - $(this).height()*0.5;
+				$(this).css({"top": y+"px" });
+			})
+		}else if(isMobile==true){
+			$(".item--01 .img-layer").css({"height": (screenWidth*33/100)+"px"});
+			var ym = screenHeight*0.5 - $(".item--01 .img-layer").height()*0.5;
+			$(".item--01 .img-layer").css({"top": ym+"px" });
+		}
+		
 	}
 
 
@@ -585,6 +616,10 @@ $(function(){
     function hideTooltip(){
         $(".tooltip").hide();   
     }
+	$(".tooltip-close").on("click", function(){
+		hideTooltip();
+	});
+
     hideTooltip();
     /********* main network *************/
 
@@ -828,10 +863,12 @@ $(function(){
 
 
 
-    $(".first-network-holder").css({"height": screenHeight*0.75});
+    $(".first-network-holder").css({"height": ((isMobile)? screenHeight*0.65 : screenHeight*0.75)+"px"});
 	$(".first-network-holder .introduction").on("click", function(){
 		$(this).fadeOut();
 	});
+
+
 
 	function init(){
 		if(chapter=="ch1"){
@@ -844,11 +881,28 @@ $(function(){
 	};
     init();
 
+	function ableBodyScroll(){
+		$("body").removeClass("fixed");
+		$("body").css({"height":"inherit"});
+		$(".fixed-slider-cover").hide();
+		$(".fixed-graphic").removeClass("blur");
+		isStart = true; 
+		$("html, body").stop().animate({scrollTop: screenHeight*0.4}, 1000);
+	}
 
-
-	$(".loading-page").fadeOut(1000, function(){
-        $("body").removeClass("fixed");
-		 
+	$(".loading-page").fadeOut(1000, function(){	
+		if(isMobile){
+			$(".going-down").on("click", function(e){
+				ableBodyScroll();
+			})
+			if(chapter !== "ch1"){
+				$("body").removeClass("fixed");
+				$("body").css({"height":"inherit"});
+			}
+		}else{
+			$("body").removeClass("fixed");
+		}
+		
 	});
 
 	var isStart = false; 
@@ -859,8 +913,8 @@ $(function(){
 		if($fs.length >= 1){
 			checkNowStage(nowScroll);
 		}
-		
-		if(chapter=="ch1"){
+
+		if(chapter=="ch1" && isMobile==false){
 			if( nowScroll> 10 && isStart == false) {
 				$(".fixed-slider-cover").hide();
 				$(".fixed-graphic").removeClass("blur");
@@ -872,22 +926,12 @@ $(function(){
 			}
 		}
 		
-
 		$(".hideme").each(function(i){
 			if( $(this).hasClass("shown") == false && nowScroll + screenHeight > $(this).offset().top + $(this).outerHeight()*0.5 ){
 				$(this).addClass("shown")
 				$(this).stop().animate({"opacity":1},1000);
 			}
 		});
-
-		
-		var ScrollPer = (nowScroll/fullScroll)*100;
-		if(isMobile==true){
-			$(".progress").css({"width":ScrollPer+"%"});
-		}else {
-			$(".progress").css({"height":ScrollPer+"%"});
-		}
-
 
 	});
 

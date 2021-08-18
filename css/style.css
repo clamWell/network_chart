@@ -348,6 +348,7 @@ border-radius: 4px;margin: 0px 2px;border: 1px solid #111;opacity: 0.7;}
 .person-ment-col .ment .ment-box { box-sizing:border-box; padding: 40px;  width: 500px; background:#fff; border-radius: 7px;  position:relative;}
 .person-ment-col .ment .ment-box p {     font-size: 18px;  font-weight: 500;    line-height: 1.6;}
 .person-ment-col .ment .ment-box .tail { position:absolute; }
+.ment-on-right{ }
 .ment-on-right .tail { left:-40px; bottom: 30px; }
 .ment-on-right .ment-box{  margin-left: 70px;}
 .person-ment-col::after { clear:both; content:"";display:block; }
@@ -441,7 +442,7 @@ position: absolute; bottom: 20px; right:20px;box-sizing:border-box; padding: 20p
 .tooltip .tooltip-wrap .col-2 .info ul li span { }
 .tooltip .tooltip-wrap .col-2 .info ul li span em.div {padding: 0px 5px; opacity: 0.4; font-size: 12px;font-style: normal;}
 .tooltip .tooltip-wrap .col-2 .info ul li span em:nth-child(1){ display:none;}
-
+.tooltip-close { position: absolute; top: 10px; right: 10px; color:#ddd; font-size: 15px;cursor: pointer; }
 .sec--02 { padding-bottom: 0;   background: #fff;}
 .sec--02 .background-white { background:#fff; box-sizing: border-box; padding: 40px 0; padding-top: 1px;}
 .sec--03 {background: #efede3;}
@@ -618,19 +619,118 @@ body.scrollOff{position:fixed;overflow:hidden;height:100%;}
 .interactive-header{ height: 40px;padding: 0px 5px; }
 .interactive-header .khan_btn img { width:80px; }
 
+/****YJ 추가*******/
+body{background:#090909;}
+.interactive-header .page-title { display:none; }
+.fixed-slider-cover .text-align-center {  width: 100%;top: auto; margin-top: 0;  padding-left: 0;  padding: 20px; padding-top: 50px; border: none;}
+.fixed-slider-cover .text-align-center p {font-size: 15.5px;}
+.going-down { bottom: 30px; }
+.spacer-holder { z-index: 5; }
+.spacer .half { width: 100%; left: 0; padding: 12px;}
+.spacer .text-box { padding: 20px; padding-bottom: 5px; font-size: 15.5px;  line-height: 1.65;}
+.slider-item .img-layer { width:100%; }
+.slider-item .img-layer > img {  border-radius: 0; width: 90%; margin: 0 auto; display: block;  position: relative; top: 50px;}
+.item--01 .img-layer > img {transform: scale(1.5); width:100%; top:0;}
+#CONF_NET { width:100%; padding-left:0; height: 80vh;}
+
+.story-title { margin: 0; }
+.story-title .title-background {  height: 300px; background: url("../img/story-title-background-yellow-2-m.jpg") no-repeat center; background-size: cover;}
+.story-title .title-text {padding-top: 40px;}
+.story-title .title-text .page-main-title img {  width: 90%;}
+.story-title .title-text .page-sub-title {  font-size: 16px;font-weight: bold; color: #6b6b6b;}
+.top-byline { margin-top: 15px; opacity: 0.6;}
+.top-byline .top-border p { font-size:12px; }
+.each-sec { padding: 0;padding-bottom: 50px;}
+.para-holder { margin: 40px auto; /* font-weight: 400; */ } 
+.para-holder p { font-size: 16.5px; box-sizing: border-box; padding: 0px 15px;  word-break: break-all;}
+.para-holder p.sm {font-size:14px;}
+.table-holder { padding: 0; }
+.table-title { font-size: 17px; }
+.tbl {padding: 0;}
+.tbl th {padding: 10px 0px; font-size: 10px;}
+.tbl td { font-size: 12px;padding: 10px 0px;}
+
+.craw-person-list-holder > button.on{top:0;}
+.craw-person-list-holder > button { width: 280px;font-size: 14.5px; padding: 15px 10px;}
+.craw-person-list-holder > button:hover { color:#fff; }
+.list-toggle-area .craw-person-list { padding: 20px 15px; }
+.list-toggle-area .craw-person-list li { width:100%; display:block; }
+.list-toggle-area .craw-person-list li span { font-size: 12px; }
+.list-toggle-area .craw-person-list li span.position {  margin-right: 4px;}
+.list-toggle-area .desc {width: 100%; text-align: left;box-sizing: border-box; padding: 0px 12px; font-size: 12px;}
+
+#G01_01 > img { width:100%; }
+.graphic-holder { margin: 35px auto;}
+.network-area .title { font-size:22px;margin-bottom: 10px; }
+.introduction .desc { width: 100%;box-sizing: border-box;padding: 0px 20px;margin-top: -100px;}
+.introduction .desc p { font-size: 15px;  text-align: left;}
+.introduction .desc button.btn {  background: #fff;width: 250px; padding: 15px; font-size: 14px;  font-weight: bold;}
+.network-group-btn-holder { margin-top: 10px; }
+.network-group-btn-holder ul{ text-align: left;box-sizing: border-box; padding: 0px 8px;}
+.network-group-btn-holder ul li { font-size: 13px;  margin: 2px 1px;padding: 4px 7px;}
+.network-group-btn-holder ul li.defaultBtn { border: 1px solid #111;}
+
+.tooltip {position: fixed; bottom: 0; width: 100%; right: 0; z-index: 99999; font-size:12px; }
+.tooltip .tooltip-wrap .col-2 .col-right{ padding-left:15px; }
+.tooltip .tooltip-wrap .col-2 .info ul li{ font-size:12px; }
+.tooltip-close {}
+
+#S01_03 > img {width:95%;border: none; }
+#S01_04 > img {width:95%; border: none;}
+
+.img-holder > img {width: 100%;}
+.img-holder { margin: 35px auto; }
+.img-holder .caption { width: 100%; box-sizing: border-box; padding: 0px 12px;  font-size: 13px; margin-top: 5px; text-align: left;opacity: 0.6;}
+
+.personnel-trans-case{ padding: 30px 15px;  border: none;  border-radius: 0;background: #efeee9;}
+.personnel-trans-case ul li {padding-bottom: 15px;margin-bottom: 15px; border-bottom: 1px solid #ddd;}
+.personnel-trans-case ul li .col-2 .trans-info{    padding-left: 70px;}
+.personnel-trans-case ul li .col-2 .trans-info .each-position { padding: 5px 0; height:auto;}
+.personnel-trans-case ul li .col-2 .thumbs{width:45px; }
+.personnel-trans-case ul li .col-2 .thumbs img{width:45px;}
+.personnel-trans-case ul li .col-2 .thumbs p.name{font-size:12px; }
+.personnel-trans-case ul li .col-2 .trans-info span.arrow {  padding: 0; padding-right: 20px;}
+
+.imp-desc-area > button{  font-size: 14px; padding: 15px 10px; margin-top: 10px;}
+.each-position-now { display:block; }
+.personnel-trans-case ul li.last{ border-bottom:0; padding-bottom:0;}
+
+.chapter-banner .project-title p{ font-size:17px; }
+.chapter-banner ul{ width: 100%; position: relative;background: #fff; box-sizing: border-box;  padding: 10px;}
+.chapter-banner ul li{   width: 100%;height: 200px;   opacity: 1;border-radius: 10px; overflow: hidden; margin: 3px 0;}
+.chapter-banner ul li .banner-con p.ch{ font-size: 24px; }
+.chapter-banner ul li .banner-con p.title{    font-size: 17px;}
+.btn-effect::after {display:none; }
+.chapter-banner ul li.on { border: 3px solid #fff; }
+.para-holder p.title {font-size: 17px;margin-bottom: 10px; font-family: 'Noto Sans KR', 'notokr-regular'; font-weight: 500;  text-align: left; box-sizing: border-box; padding-left: 14px;  border-left: 4px solid #111; margin-left: 14px; line-height: 1.3;}
+.ranking-box{border: none;padding: 0;  border-top: 2px solid #111; border-radius: 0; border-bottom: 2px solid #111;}
+.imp-desc-area button.on {top:7px;}
+.imp-desc-area > button:hover{color:#fff;}
+.img-desc-list ul {padding: 15px;border: none;border-radius: 0;}
+.img-desc-list ul li p{ font-size: 14px;line-height: 1.6;}
+.img-desc-list ul li p.name{ font-size:14px; }
+
+#S04_01 img { width:100%; }
+.graphic-holder .graph-title {  box-sizing: border-box;  padding: 0px 12px; margin-bottom: 10px;  font-size: 15px;}
+.keyword-graphic > img { width:95%; border: 1px solid #111;}
+.keyword-graphic-down > img {box-shadow: 4px 4px 0px blue;}
+.keyword-graphic-up > img {box-shadow: 4px 4px 0px #ffa60f;}
+/****YJ 추가*******/
+
+
 /* 여기부터 수민 입력 */
 .semi-graphic-header .title-text .page-main-title img {width: 100%;}
 #S03_01 > img {width: 85%;}
 .sec-title .numb {font-size: 60px;padding-top: 15px;line-height: 100px;}
-.sec-title .title {font-size: 17px;}
-.para-holder {margin: 60px auto;}
-.para-holder p.ment {font-size: 16px; width: 90%;}
-.para-holder p {padding: 0px 15px; font-size: 17.5px;}
-.img-holder > img {width: 100%;}
-.sec--03 .graphic-holder .ment-on-right .ment .tail { left: 10px; bottom: 180px; }
+.sec-title .title {font-size: 18px;}
+.sec-title .semi { font-size:14px; }
+.para-holder p.ment {font-size: 16px; width: 90%; word-break: keep-all;}
+#S03_04 img {width: 150%; left: -25%;}
+
+.sec--03 .graphic-holder .ment-on-right .ment .tail { left: 50px;bottom: auto;top: -20px;}
 .ment-on-right .tail img { transform: rotate(110deg); }
 #G03_04 .ment .ment-box {top: 20px; margin: 0 auto;}
-.img-holder .caption {word-break: keep-all; width: 90%;}
+.img-holder .caption {word-break: keep-all; }
 .person-ment-col .person {text-align: center; float:none;}
 .person-ment-col .person img { width: 180px;}
 .person-ment-col .ment .ment-box {padding: 25px; width: 100%;}
@@ -638,14 +738,16 @@ body.scrollOff{position:fixed;overflow:hidden;height:100%;}
 .person-ment-col .ment .ment-box p.date {font-size: 13px; }
 
 .img-text-col-holder > div {float: none; width: 100%;}
-#S05_02 .img-col-03 img {width: 90px; margin: 0px 5px;}
+#S05_02 .book { width: 250px; }
+#S05_02 .img-col-03 img {width: 80px; margin: 0px 5px;}
 #S05_02 .img-col-03 {bottom: 50px;}
-#S05_03 .img-col-03 img {width: 90px; margin: 0px 5px;}
+#S05_03 .book { width: 250px; }
+#S05_03 .img-col-03 img {width: 80px; margin: 0px 5px;}
 #S05_03 .img-col-03 {font-size: 30px; bottom: 50px;}
 #S05_06 img { border-radius: 0%;}
 
-.hidden-ment-list > h2 {margin: 0 10px 20px 10px;}
-.hidden-ment-desc {width: 100%;}
+.hidden-ment-list > h2 {margin: 0 10px 20px 10px; font-size:20px; }
+.hidden-ment-desc {width: 100%; font-size: 14.5px; }
 .hidden-ment-list .person-ment-col .person {margin: 0 auto; width: 200px;}
 .hidden-ment-list .person-ment-col .person .hidden-off > img {width: 200px; height: 284.8px;}
 .hidden-ment-list .person-ment-col .ment .ment-box p {font-size: 16px;}
@@ -666,6 +768,7 @@ body.scrollOff{position:fixed;overflow:hidden;height:100%;}
 #S05_05 img {left: 20px; top: 0;}
 /* 수민 여기까지 */
 
+
 .bottom-byline { margin-top:0;}
 .rel-article { padding: 20px 15px;  box-sizing: border-box;}
 .rel-article .rel-box { }
@@ -684,7 +787,7 @@ body.scrollOff{position:fixed;overflow:hidden;height:100%;}
 .digital-common-byline .c-byline-border .brand-desc .desc-text { font-size: 14px; }
 .digital-common-byline .c-byline-border .brand-desc { margin-bottom: 20px; }
 .digital-common-byline .c-byline-people h3 { font-size: 15px; padding-left: 10px; border-left: 5px solid #111; line-height: 1;}
-.digital-common-byline .c-byline-people ul li { width: 100%; padding-right: 0px; min-height: 42px; }
+.digital-common-byline .c-byline-people ul li { width: 50%; padding-right: 0px; padding-left: 50px; min-height: 42px; }
 .digital-common-byline .c-byline-people ul li .p-thumbs img { width: 40px; height:40px; }
 .digital-common-byline .c-byline-people ul li .p-text { font-size: 12px; }
 .digital-common-byline .c-byline-people ul li .p-text .mail {  font-size: 10px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%;}
