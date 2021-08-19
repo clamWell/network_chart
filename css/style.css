@@ -121,6 +121,7 @@ background:#111; }
 .top-title img {  width: 120px; margin-top: 12px; opacity:0.5; }
 .share_bx span .user-count { position: absolute; bottom: 18px; left: -20px; font-size: 13px;  color: #b2b2b2;font-style: normal; letter-spacing: 0px; }
 .share_bx span:hover > img { opacity:1; filter: alpha(opacity = 100); }
+/* Header */
 
 /* 수민 햄버거 수정 */
 .burger_wrap {display: none; }
@@ -134,8 +135,8 @@ background:#111; }
 .close_btn > a{display: block; width: 100%;height: 100%;}
 .menu_wrap{list-style: none; padding: 20px 20px;}
 .menu_wrap li a{color: #fff;text-decoration: none;}
+.sidebar_back {display: none;}
 /* 수민 여기까지 */
-/* Header */
 
 /* common */
 .wrap-psrelative, .wrap_psrelative { width: 100%; height :100%; position: relative; }
@@ -228,7 +229,7 @@ margin: 0 auto;  letter-spacing: -0.02em; font-size: 18px; line-height: 1.8; /* 
 .para-holder p.strong { font-weight:bold;}
 .para-holder p.center { text-align: center; }
 .para-holder p.docu {box-sizing: border-box; padding-left: 40px; border-left: 3px solid #fff; font-size: 18px; }
-.para-holder p.ment {  font-weight: 500;font-family: 'Noto Sans KR', 'notokr-regular'; text-align: center;  font-size: 18px; }
+.para-holder p.ment {  font-weight: 500;font-family: 'Noto Sans KR', 'notokr-regular';  font-size: 18px; }
 .para-docu p { font-weight: lighter; font-family: 'Noto Serif KR',  'notokr-regular'; }
 .sec-title .numb { font-family: 'Noto Serif KR', 'notokr-regular', serif;  width: 100%;text-align: center;
 font-size: 80px;line-height: 120px;color: #222; font-weight: 600; font-weight: 600;}
@@ -258,7 +259,7 @@ font-size: 80px;line-height: 120px;color: #222; font-weight: 600; font-weight: 6
 
 .story-title { margin: 100px auto; position: relative; }
 .story-title .title-background {  width:100%; height: 550px;position: relative; top: 0; left:0; z-index:1;
-background: url("../img/story-title-background-yellow-2.jpg") no-repeat center; background-size: cover; }
+background: url("https://img.khan.co.kr/spko/storytelling/2021/network/story-title-background-yellow-2.jpg") no-repeat center; background-size: cover; }
 .story-title .title-text { width:100%; box-sizing: border-box; padding-top: 80px;  position: relative;  z-index: 2;}
 .story-title .title-text .page-main-title {width:100%; margin-bottom: 20px; }
 .story-title .title-text .page-main-title img { display:block; margin: 0 auto;}
@@ -414,21 +415,21 @@ padding: 20px;background: #fff;  width: 300px;border-radius: 8px; margin-bottom:
 .hidden-ment-list { box-sizing: border-box;  padding: 40px 0; padding-top:80px;  }
 .hidden-ment-list > h2 {text-align: center;margin-bottom: 20px;font-size: 32px;  font-weight: 300;}
 .hidden-ment-desc {  text-align: center;  width: 400px;  margin: 20px auto;  box-sizing: border-box;  padding: 10px;  background:rgba(255,255,255,0.2); }
-.hidden-ment-list .graphic-holder {border-bottom: 1px solid #ceccc3; padding-bottom: 40px; max-width: 1000px;}
+.hidden-ment-list .graphic-holder { max-width: 900px; margin: 20px auto; }
 .hidden-ment-list .person-ment-col { max-width: 1000px; }
 
 .ment-on-left .tail { left: auto; right: -40px; bottom: 30px; }
 .ment-on-left .ment-box { margin-right:70px; }
-.hidden-ment-list .person-ment-col .person { cursor:pointer; width: 300px;box-sizing: border-box;border-radius: 15px; overflow:hidden; position: relative;}
+.hidden-ment-list .person-ment-col .person { cursor:pointer; width: 180px;box-sizing: border-box;border-radius: 15px; overflow:hidden; position: relative;}
 .hidden-ment-list .person-ment-col .person:hover { border: 1px solid #fff; background: #ffc107; box-shadow: 10px 10px 20px rgba(0,0,0,0.1); }
 .hidden-ment-list .person-ment-col .person > p { margin-top: 10px; color: #565651;  text-align: center;font-weight: bold; }
 .hidden-ment-list .person-ment-col .person .hidden { position: relative; }
 .hidden-ment-list .person-ment-col .person .hidden > img { width:100%;    vertical-align: bottom; }
 .hidden-ment-list .person-ment-col .person .hidden-off { position: absolute; top: 0;bottom: auto;  left: 0;width:100%; height:0%; overflow:hidden; } 
-.hidden-ment-list .person-ment-col .person .hidden-off > img { display: block;  width: 300px; height: 428px;    vertical-align: bottom;}
-.hidden-ment-list .person-ment-col .person .name { position: absolute;bottom: 20px; left: 20px;font-size: 16px; color: #000;display:none; background: #efede3; padding: 2px 10px;}
+.hidden-ment-list .person-ment-col .person .hidden-off > img { display: block;  width: 180px; height: 257px;    vertical-align: bottom;}
+.hidden-ment-list .person-ment-col .name { position: absolute;bottom: 20px; left: 20px;font-size: 16px; color: #000;display:none;font-weight: bold; background: #efede3; padding: 2px 10px;}
 .hidden-ment-list .person-ment-col .person-after { cursor: default; pointer-events: none;  background: #aeaca4;background: #d5d3cb;}
-.hidden-ment-list .person-ment-col .ment { top:60px;  position: relative; width: 700px; }
+.hidden-ment-list .person-ment-col .ment { top:10px;  position: relative; width: 700px; }
 .hidden-ment-list .person-ment-col .ment .ment-box { width: 650px; }
 .hidden-ment-list .person-ment-col .ment .ment-box p {font-size:20px; }
 .person-ment-col .ment .ment-box p.date {  font-size: 14px; opacity: 0.5; margin-top: 20px; }
@@ -441,7 +442,7 @@ padding: 20px;background: #fff;  width: 300px;border-radius: 8px; margin-bottom:
 background: rgba(255,255,255,0.7);border-radius: 5px;margin: 30px auto; box-sizing: border-box; padding: 20px;font-family: 'Noto Sans KR';font-size:16px;  }
 
 .tooltip { width: 450px; background:#29292a; border-radius: 7px; box-shadow: 7px 7px 10px rgba(0,0,0,0.15);
-position: absolute; bottom: 20px; right:20px;box-sizing:border-box; padding: 20px; }
+position: absolute; bottom: 20px; right:20px;box-sizing:border-box; padding: 20px; display:none;}
 .tooltip .tooltip-wrap { width:100%; }
 .tooltip .tooltip-wrap h3 { color:#555; text-align:center; display:none; font-size: 14px; margin-bottom:20px; }
 .tooltip .tooltip-wrap .col-2 { width:100%; position: relative; }
@@ -501,10 +502,12 @@ img.borderRadius {  max-width: 800px; border-radius: 8px;}
 .chapter-banner ul li .banner-con p.ch { font-size: 30px; font-family: 'Noto Serif KR', 'notokr-regular'; margin-bottom: 10px;font-weight: bold;opacity: 0.8;text-shadow: 2px 2px 0px #111;}
 .chapter-banner ul li .banner-con p.title{ text-shadow: 0px 0px 2px #111; font-size: 20px; font-family: 'Noto Sans KR', 'notokr-regular'; font-weight: 300;  opacity: 0.8;}
 .chapter-banner ul li.on .banner-con p { opacity:1; color:#fff;}
-.banner-bg--01 { width:100%; height:100%; background:url("../img/ch1-banner-on.jpg") no-repeat; background-size:cover; background-position: center;  }
-.banner-bg--02 { width:100%; height:100%; background:url("../img/ch2-banner-on.jpg") no-repeat; background-size:cover; background-position: center; }
-.banner-bg--03 { width:100%; height:100%; background:url("../img/ch3-banner-on.jpg") no-repeat; background-size:cover; background-position: center; }
+.banner-bg--01 { width:100%; height:100%; background:url("https://img.khan.co.kr/spko/storytelling/2021/network/ch1-banner-on.jpg") no-repeat; background-size:cover; background-position: center;  }
+.banner-bg--02 { width:100%; height:100%; background:url("https://img.khan.co.kr/spko/storytelling/2021/network/ch2-banner-on.jpg") no-repeat; background-size:cover; background-position: center; }
+.banner-bg--03 { width:100%; height:100%; background:url("https://img.khan.co.kr/spko/storytelling/2021/network/ch3-banner-on.jpg") no-repeat; background-size:cover; background-position: center; }
 
+#ch3 .chapter-banner { background: #efede3; } 
+ 
 .btn-effect::after {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;
 z-index: 1;opacity: 0;transition: all 0.3s;border: 2px solid #fff;transform: scale(1.2,1.2);box-sizing: border-box; }
 .btn-effect:hover::after {opacity: 1;transform: scale(1,1);}
@@ -633,6 +636,25 @@ body.scrollOff{position:fixed;overflow:hidden;height:100%;}
 .interactive-header{ height: 40px;padding: 0px 5px; }
 .interactive-header .khan_btn img { width:80px; }
 
+.burger_wrap {display: block; } 
+.menu_btn img{  height: 18px;vertical-align: top; padding-top: 2px;}
+.sidebar_menu { width: 85%; background:#111; box-sizing: border-box; padding: 30px 0; z-index:102;}
+.sidebar_menu a { display:block; }
+.sidebar_menu .close_btn {  position: absolute; top: 8px; right: 8px;  z-index: 2;margin: 0;}
+.sidebar_menu .close_btn .close { color:#fff; font-size:24px; font-weight:bold;  } 
+.sidebar_menu .project-title img { width: 200px; margin: 0 auto; display: block;}
+.sidebar_menu .chapter-banner {background:#111; }
+#ch3 .sidebar_menu .chapter-banner {background:#111; }
+#ch3 .sidebar_menu .chapter-banner ul {background:#111; }
+.sidebar_menu .chapter-banner ul {background: none;  padding: 0px 15px;}
+.sidebar_menu .chapter-banner ul li { height:auto;   background: none; border: 1px dashed rgba(255,255,255,0.5); }
+.sidebar_menu .chapter-banner ul li .banner-bg { opacity: 0.4; }
+.sidebar_menu .chapter-banner ul li .banner-con { padding: 20px 0; }
+.sidebar_menu .chapter-banner ul li .banner-con p.ch {font-size: 18px; margin-bottom: 5px; opacity:1; }
+.sidebar_menu .chapter-banner ul li .banner-con p.title {font-size: 14px; opacity:1;  min-height: 48px; }
+.sidebar_menu .chapter-banner ul li.on { border: 1px solid #fff; } 
+.sidebar_back {display: none; position: fixed; width:100%; height:100%; background: rgba(0,0,0,0.8); z-index:101;}
+
 /****YJ 추가*******/
 body{background:#090909;}
 .interactive-header .page-title { display:none; }
@@ -648,7 +670,7 @@ body{background:#090909;}
 #CONF_NET { width:100%; padding-left:0; height: 80vh;}
 
 .story-title { margin: 0; }
-.story-title .title-background {  height: 300px; background: url("../img/story-title-background-yellow-2-m.jpg") no-repeat center; background-size: cover;}
+.story-title .title-background {  height: 300px; background: url("https://img.khan.co.kr/spko/storytelling/2021/network/story-title-background-yellow-2-m.jpg") no-repeat center; background-size: cover;}
 .story-title .title-text {padding-top: 40px;}
 .story-title .title-text .page-main-title img {  width: 90%;}
 .story-title .title-text .page-sub-title {  font-size: 16px;font-weight: bold; color: #6b6b6b;}
@@ -711,6 +733,7 @@ body{background:#090909;}
 
 .chapter-banner .project-title p{ font-size:17px; }
 .chapter-banner ul{ width: 100%; position: relative;background: #fff; box-sizing: border-box;  padding: 10px;}
+#ch3 .chapter-banner ul {background: #efede3; }
 .chapter-banner ul li{   width: 100%;height: 200px;   opacity: 1;border-radius: 10px; overflow: hidden; margin: 3px 0;}
 .chapter-banner ul li .banner-con p.ch{ font-size: 24px; }
 .chapter-banner ul li .banner-con p.title{    font-size: 17px;}
@@ -731,21 +754,25 @@ body{background:#090909;}
 .keyword-graphic-up > img {box-shadow: 4px 4px 0px #ffa60f;}
 /****YJ 추가*******/
 
+
+/* 여기부터 수민 입력 */
 .semi-graphic-header .title-text .page-main-title img {width: 100%;}
 #S03_01 > img {width: 85%;}
 .sec-title .numb {font-size: 60px;padding-top: 15px;line-height: 100px;}
 .sec-title .title {font-size: 18px;}
 .sec-title .semi { font-size:14px; }
-.para-holder p.ment {font-size: 16px; width: 90%; word-break: keep-all;}
+.para-holder p.ment {font-size: 16px; width: 100%; word-break: keep-all;}
 #S03_04 img {width: 150%; left: -25%;}
 
-.sec--03 .graphic-holder .ment-on-right .ment .tail { left: 50px;bottom: auto;top: -20px;}
-.ment-on-right .tail img { transform: rotate(110deg); }
+.graphic-holder .person-ment-col .ment .tail { left: 30px;bottom: auto;top: -25px;}
+.sec--03 .graphic-holder .ment-on-right .ment .tail { }
+.ment-on-right .tail img { transform: rotate(110deg); width:30px; }
+#G03_04 { margin-bottom: 100px; }
 #G03_04 .ment .ment-box {top: 20px; margin: 0 auto;}
 .img-holder .caption {word-break: keep-all; }
 .person-ment-col .person {text-align: center; float:none;}
 .person-ment-col .person img { width: 180px;}
-.person-ment-col .ment .ment-box {padding: 25px; width: 100%;}
+.person-ment-col .ment .ment-box {padding: 20px; width: 100%;}
 .person-ment-col .ment .ment-box p {font-size: 16px;}
 .person-ment-col .ment .ment-box p.date {font-size: 13px; }
 
@@ -753,34 +780,33 @@ body{background:#090909;}
 #S05_02 .book { width: 250px; }
 #S05_02 .img-col-03 img {width: 80px; margin: 0px 5px;}
 #S05_02 .img-col-03 {bottom: 50px;}
-#S05_03 .book { width: 250px; }
+#S05_03 .book { width: 200px; }
 #S05_03 .img-col-03 img {width: 80px; margin: 0px 5px;}
 #S05_03 .img-col-03 {font-size: 30px; bottom: 50px;}
 #S05_06 img { border-radius: 0%;}
 
+.hidden-ment-list { padding-top:0;}
 .hidden-ment-list > h2 {margin: 0 10px 20px 10px; font-size:20px; }
-.hidden-ment-desc {width: 100%; font-size: 14.5px; }
-.hidden-ment-list .person-ment-col .person {margin: 0 auto; width: 200px;}
-.hidden-ment-list .person-ment-col .person .hidden-off > img {width: 200px; height: 284.8px;}
+.hidden-ment-desc {width: 100%; font-size: 14.5px;  color: #74736f; }
+.hidden-ment-list .person-ment-col .person {margin: 0 auto; width: 100px;background: #dfdccd;  }
+.hidden-ment-list .person-ment-col .person .hidden-off > img {width: 100px; height: 143px;}
 .hidden-ment-list .person-ment-col .ment .ment-box p {font-size: 16px;}
 .hidden-ment-list .person-ment-col .ment .ment-box p.date {font-size: 13px;}
+.hidden-ment-list .person-ment-col .person:hover { border: none;  background: default;  box-shadow: none; }
 .person-ment-col .ment .ment-box p.date {margin-top: 15px;}
 .person-ment-col .ment {width: 90%; margin: 0 auto;float:none;}
 .ment-on-right .ment-box { margin: 0;}
-.hidden-ment-list .person-ment-col .ment { width: 100%;}
+.hidden-ment-list .person-ment-col .ment { width: 100%;  top: 0; margin-top: 25px;}
 .hidden-ment-list .person-ment-col .ment .ment-box {width: 90%; margin: 0 auto 30px auto;}
 .ment-on-left .tail {top: 160px; left: 20px;right:0;}
 .ment-on-left .tail img {transform: rotate(75deg);}
-.hidden-ment-list .graphic-holder .ment-on-right .ment .ment-box .tail { left: 10px; bottom: 200px;}
-.hidden-ment-list .graphic-holder-last .ment-on-right .ment .ment-box .tail { left: 10px; bottom: 230px;}
 .hidden-ment-list .graphic-holder .ment-on-left .person { margin-top:60px;}
 .sec--05 { padding-bottom: 0;}
+.hidden-ment-list .person-ment-col .name {bottom: auto;top: 140px; width: 100%;  text-align: center; left: 0; padding: 0;  box-sizing: border-box; background: none;
+font-size: 13px; color: #5b5a56;}
 
 #S05_05 {width: 700px; height: auto;}
 #S05_05 img {left: 20px; top: 0;}
-
-/* 수민 햄버거 수정*/
-.burger_wrap {display: block;}
 /* 수민 여기까지 */
 
 

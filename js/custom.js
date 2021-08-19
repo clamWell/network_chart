@@ -15,42 +15,23 @@ function avoid100vh(){
 	$(".ie-block").height(screenHeight);
 }
 
-/* 수민 햄버거 수정 */
-$(document).ready(function(){
- 
-  $('.menu_btn>a').on('click', function(){
-      $('.menu_bg').show(); 
-      $('.sidebar_menu').show().animate({
-          right:0
-      });  
-  });
-  $('.close_btn>a').on('click', function(){
-      $('.menu_bg').hide(); 
-      $('.sidebar_menu').animate({
-          right: '-' + 50 + '%'
-                  },function(){
-                      $('.sidebar_menu').hide();          
-                  });  
-  });
-
-});
-/* 수민 여기까지 */
 
 /******** 모바일 전용 조정 ********/
 if(isMobile==true){
 	$("body").css({"height":screenHeight});
 	$(".going-down span").html("클릭해주세요")
-	$(".item--01 .img-layer > img").attr("src", "img/con-photo-00-m.jpg");
-	$(".item--02 .img-layer > img").attr("src", "img/con-photo-01-m.jpg");
-	$(".item--03 .img-layer > img").attr("src", "img/con-photo-02-m.jpg");
-	$(".item--04 .img-layer > img").attr("src", "img/con-photo-03-m.jpg");
-	$(".item--06 .img-layer > img").attr("src", "img/con-photo-04-m.jpg");       
-	$(".item--07 .img-layer > img").attr("src", "img/con-photo-05-m.jpg");
-	$(".item--08 .img-layer > img").attr("src", "img/con-photo-06-m.jpg");
-	$(".item--09 .img-layer > img").attr("src", "img/con-photo-07-m.jpg");
+	$(".item--01 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-00-m.jpg");
+	$(".item--02 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-01-m.jpg");
+	$(".item--03 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-02-m-2.jpg");
+	$(".item--04 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-03-m.jpg");
+	$(".item--06 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-04-m.jpg");       
+	$(".item--07 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-05-m.jpg");
+	$(".item--08 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-06-m.jpg");
+	$(".item--09 .img-layer > img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/con-photo-07-m.jpg");
 	avoid100vh();
 }
 /******** 모바일 전용 조정 ********/
+
 
 $(function(){
 	
@@ -439,8 +420,8 @@ $(function(){
             maxVelocity: 50,
             solver: "forceAtlas2Based",
             timestep: 0.01,
+			stabilization:true,
            // stabilization: { iterations: 150 },
-			   stabilization:true
           },
           groups:{ //0,2,3,6,8,9,10,12,13,14,16,18,19,20
 			"g0": { color: "#bcf2e0" },
@@ -454,12 +435,15 @@ $(function(){
             "g8": { color: "#d372db"}
 		  }
         };
-       main_network = new vis.Network(container, data, options);
-	   main_network.stabilize(2000);
-	   main_allNodes = main_nodesDataset.get({ returnType: "Object" });
-       main_allEdges = main_edgesDataset.get({ returnType: "Object" });
-	   main_network.on("click", mainHighlight);
+		main_network = new vis.Network(container, data, options);
+		main_network.stabilize(2000);
+		main_allNodes = main_nodesDataset.get({ returnType: "Object" });
+		main_allEdges = main_edgesDataset.get({ returnType: "Object" });
+		main_network.on("click", mainHighlight);
 
+		main_network.on("stabilizationIterationsDone", function () {
+			network.setOptions( { physics: false } );
+		});
     }
 
 
@@ -567,9 +551,9 @@ $(function(){
         });
         //console.log(selectNodeData);
 		if(selectNodeData.thumb == true){
-			$(".tooltip .tooltip-wrap .col-2 .thumbs img").attr("src", "img/tool-thumb-"+selectNodeData.id+".jpg");
+			$(".tooltip .tooltip-wrap .col-2 .thumbs img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/tool-thumb-"+selectNodeData.id+".jpg");
 		}else{
-			$(".tooltip .tooltip-wrap .col-2 .thumbs img").attr("src", "img/img_thumb_human_profile.jpg");
+			$(".tooltip .tooltip-wrap .col-2 .thumbs img").attr("src", "https://img.khan.co.kr/spko/storytelling/2021/network/img_thumb_human_profile.jpg");
 		}
         if(selectNodeData.name.match(/\d+/g) == null){
              $(".tooltip .info ul li span.name").html( selectNodeData.name);
@@ -967,9 +951,28 @@ $(function(){
 			$(this).addClass("person-after");
 			//$(this).find(".hidden").find("img").css({"":""})
 			$(this).find(".hidden-off").stop().animate({"height":"100%"}, 1000,"easeOutCirc");
-			$(this).find(".name").fadeIn();
+			$(this).siblings(".name").fadeIn();
 		}
 	});
+
+
+	 
+	$(".menu_btn > a").on("click", function(){
+		$(".sidebar_back").show();
+		$(".menu_bg").show(); 
+		$(".sidebar_menu").show().animate({"right":0}, 700, "easeOutCirc"); 
+		$("body").addClass("fixed");
+	});
+
+	$(".close_btn > a").on("click", function(){
+	  $(".menu_bg").hide(); 
+	  $(".sidebar_menu").animate({"right": '-' + 100 + '%'},function(){
+		  $(".sidebar_back").hide();
+		  $(".sidebar_menu").hide();
+		  $("body").removeClass("fixed");
+	  });  
+	});
+
 
 
 });

@@ -111,7 +111,7 @@ var crawPersonList = [
   },
   {
     "name": "한인섭",
-    "position1": "(전) 한국형사정책연구원 원장",
+    "position1": "(전) 한국 환경정책평가연구원 원장",
     "position2": "국민의사법참여연구회 회장"
   },
   {
@@ -271,7 +271,7 @@ var crawPersonList = [
   },
   {
     "name": "조황희",
-    "position1": "국가우주정책연구센터",
+    "position1": "국가우주정책연구센터장",
     "position2": "과학기술정책연구원 원장"
   },
   {
@@ -331,8 +331,8 @@ var crawPersonList = [
   },
   {
     "name": "송병국",
-    "position1": "한국교직원공제회 대의원",
-    "position2": "한국청소년정책연구원 원장"
+    "position1": "(전)한국청소년정책연구원 원장",
+    "position2": null
   },
   {
     "name": "양창호",
