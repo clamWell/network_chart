@@ -121,6 +121,20 @@ background:#111; }
 .top-title img {  width: 120px; margin-top: 12px; opacity:0.5; }
 .share_bx span .user-count { position: absolute; bottom: 18px; left: -20px; font-size: 13px;  color: #b2b2b2;font-style: normal; letter-spacing: 0px; }
 .share_bx span:hover > img { opacity:1; filter: alpha(opacity = 100); }
+
+/* 수민 햄버거 수정 */
+.burger_wrap {display: none; }
+.header_bg {text-align: right; height:40px; align-items: center;}
+.menu_btn{padding: 8px 5px;}
+.menu_btn img {height: 24px;}
+.menu_bg{width: 100%; height: 100%; background: rgba(0,0,0,0.7); position: absolute; top:0; display: none;}
+.sidebar_menu{display: none; width: 50%; height: 100%; background: #ddd; position: absolute; top:0; right: -50%; z-index: 101;}
+.close_btn{ width: 25px; height: 25px; margin:10px;}
+.close_btn img {width:30px;}
+.close_btn > a{display: block; width: 100%;height: 100%;}
+.menu_wrap{list-style: none; padding: 20px 20px;}
+.menu_wrap li a{color: #fff;text-decoration: none;}
+/* 수민 여기까지 */
 /* Header */
 
 /* common */
@@ -717,8 +731,6 @@ body{background:#090909;}
 .keyword-graphic-up > img {box-shadow: 4px 4px 0px #ffa60f;}
 /****YJ 추가*******/
 
-
-/* 여기부터 수민 입력 */
 .semi-graphic-header .title-text .page-main-title img {width: 100%;}
 #S03_01 > img {width: 85%;}
 .sec-title .numb {font-size: 60px;padding-top: 15px;line-height: 100px;}
@@ -766,6 +778,9 @@ body{background:#090909;}
 
 #S05_05 {width: 700px; height: auto;}
 #S05_05 img {left: 20px; top: 0;}
+
+/* 수민 햄버거 수정*/
+.burger_wrap {display: block;}
 /* 수민 여기까지 */
 
 

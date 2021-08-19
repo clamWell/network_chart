@@ -15,6 +15,26 @@ function avoid100vh(){
 	$(".ie-block").height(screenHeight);
 }
 
+/* 수민 햄버거 수정 */
+$(document).ready(function(){
+ 
+  $('.menu_btn>a').on('click', function(){
+      $('.menu_bg').show(); 
+      $('.sidebar_menu').show().animate({
+          right:0
+      });  
+  });
+  $('.close_btn>a').on('click', function(){
+      $('.menu_bg').hide(); 
+      $('.sidebar_menu').animate({
+          right: '-' + 50 + '%'
+                  },function(){
+                      $('.sidebar_menu').hide();          
+                  });  
+  });
+
+});
+/* 수민 여기까지 */
 
 /******** 모바일 전용 조정 ********/
 if(isMobile==true){
