@@ -957,17 +957,17 @@ $(function(){
 
 
 	 
-	$(".menu_btn > a").on("click", function(){
+	$(".menu_btn").on("click", function(){
 		$(".sidebar_back").show();
 		$(".menu_bg").show(); 
 		$(".sidebar_menu").show().animate({"right":0}, 700, "easeOutCirc"); 
 		$("body").addClass("fixed");
 	});
 
-	$(".close_btn > a").on("click", function(){
+	$(".close_btn").on("click", function(){
 	  $(".menu_bg").hide(); 
+      $(".sidebar_back").hide();
 	  $(".sidebar_menu").animate({"right": '-' + 100 + '%'},function(){
-		  $(".sidebar_back").hide();
 		  $(".sidebar_menu").hide();
 		  $("body").removeClass("fixed");
 	  });  

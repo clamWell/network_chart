@@ -368,6 +368,9 @@ border-radius: 4px;margin: 0px 2px;border: 1px solid #111;opacity: 0.7;}
 .ment-on-right .ment-box{  margin-left: 70px;}
 .person-ment-col::after { clear:both; content:"";display:block; }
 
+.person-ment-col .person-thumb-circle img {width: 120px;border-radius: 50%;   box-sizing: border-box;  padding: 4px; background: #fff;}
+#G03_05 .person-ment-col { max-width: 700px;     margin-bottom: 30px;}
+#G03_05 .person-ment-col .ment .ment-box .tail { bottom: auto; top: 30px; }
 
 #S03_04 img { max-width: 1400px; }
 #G03_04 .ment .ment-box {  position: relative; top: 40px;}
@@ -610,12 +613,7 @@ font-family: 'Noto Sans KR', 'notokr-regular', 'Apple SD Gothic Neo','맑은 고
 #S04_01 > img {max-width: 700px;}
 .keyword-graphic > img {max-width: 550px;}
 #S05_06 > img {max-width:750px; }
-.hidden-ment-list .person-ment-col { max-width: 900px; }
-.hidden-ment-list .person-ment-col .person { width: 250px;  }
-.hidden-ment-list .person-ment-col .person .hidden-off > img { width: 250px; height:356px; } 
-.hidden-ment-list .person-ment-col .ment { width:600px; top: 30px;  }
-.hidden-ment-list .person-ment-col .ment .ment-box p { font-size: 18px; }
-.hidden-ment-list .person-ment-col .ment .ment-box { width: 500px; }
+
 
 .chapter-banner ul li { height:400px; }
 
@@ -713,12 +711,15 @@ body{background:#090909;}
 
 #S01_03 > img {width:95%;border: none; }
 #S01_04 > img {width:95%; border: none;}
+#S01_06 > img {width:95%;border: none; }
+#S01_07 > img {width:95%; border: none;}
+
 
 .img-holder > img {width: 100%;}
 .img-holder { margin: 35px auto; }
 .img-holder .caption { width: 100%; box-sizing: border-box; padding: 0px 12px;  font-size: 13px; margin-top: 5px; text-align: left;opacity: 0.6;}
 
-.personnel-trans-case{ padding: 30px 15px;  border: none;  border-radius: 0;background: #efeee9;}
+.personnel-trans-case{ padding: 30px 15px;  border: none;  border-radius: 0;background: #fff;}
 .personnel-trans-case ul li {padding-bottom: 15px;margin-bottom: 15px; border-bottom: 1px solid #ddd;}
 .personnel-trans-case ul li .col-2 .trans-info{    padding-left: 70px;}
 .personnel-trans-case ul li .col-2 .trans-info .each-position { padding: 5px 0; height:auto;}
@@ -802,13 +803,16 @@ body{background:#090909;}
 .ment-on-left .tail img {transform: rotate(75deg);}
 .hidden-ment-list .graphic-holder .ment-on-left .person { margin-top:60px;}
 .sec--05 { padding-bottom: 0;}
-.hidden-ment-list .person-ment-col .name {bottom: auto;top: 140px; width: 100%;  text-align: center; left: 0; padding: 0;  box-sizing: border-box; background: none;
+.hidden-ment-list .person-ment-col .name {bottom: auto;top: 145px; width: 100%;  text-align: center; left: 0; padding: 0;  box-sizing: border-box; background: none;
 font-size: 13px; color: #5b5a56;}
 
 #S05_05 {width: 700px; height: auto;}
 #S05_05 img {left: 20px; top: 0;}
 /* 수민 여기까지 */
 
+.person-ment-col .person-thumb-circle img { width: 120px; }
+#G03_05 .person-ment-col .person { margin-bottom: 10px;}
+#G03_05 .person-ment-col .ment .ment-box .tail { top: -20px;left: 30%;}
 
 .bottom-byline { margin-top:0;}
 .rel-article { padding: 20px 15px;  box-sizing: border-box;}
