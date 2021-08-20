@@ -9,7 +9,7 @@ var data_confnetwork = {
     "group": "서울대아님",
     "group_a": "서강대",
     "group_b": null,
-    "image": "img/intro-net-13.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-13.jpg",
     "shape": "circularImage"
   },
   {
@@ -21,7 +21,7 @@ var data_confnetwork = {
     "group": "서울대아님",
     "group_a": "경북대",
     "group_b": null,
-    "image": "img/intro-net-20.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-20.jpg",
     "shape": "circularImage"
   },
   {
@@ -33,7 +33,7 @@ var data_confnetwork = {
     "group": "서울대",
     "group_a": "서울대",
     "group_b": "경제학과",
-    "image": "img/intro-net-12.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-12.jpg",
     "shape": "circularImage"
   },
   {
@@ -45,7 +45,7 @@ var data_confnetwork = {
     "group": "서울대",
     "group_a": "서울대",
     "group_b": "경제학과",
-    "image": "img/intro-net-21.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-21.jpg",
     "shape": "circularImage"
   },
   {
@@ -57,7 +57,7 @@ var data_confnetwork = {
     "group": "서울대아님",
     "group_a": "국민대",
     "group_b": null,
-    "image": "img/intro-net-22.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-22.jpg",
     "shape": "circularImage"
   },
   {
@@ -69,7 +69,7 @@ var data_confnetwork = {
     "group": "서울대",
     "group_a": "서울대",
     "group_b": "경제학과",
-    "image": "img/intro-net-09.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-09.jpg",
     "shape": "circularImage"
   },
   {
@@ -81,7 +81,7 @@ var data_confnetwork = {
     "group": "서울대아님",
     "group_a": "연세대",
     "group_b": null,
-    "image": "img/intro-net-18.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-18.jpg",
     "shape": "circularImage"
   },
   {
@@ -93,7 +93,7 @@ var data_confnetwork = {
     "group": "서울대아님",
     "group_a": "연세대",
     "group_b": null,
-    "image": "img/intro-net-10.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-10.jpg",
     "shape": "circularImage"
   },
   {
@@ -105,7 +105,7 @@ var data_confnetwork = {
     "group": "서울대아님",
     "group_a": "고려대",
     "group_b": null,
-    "image": "img/intro-net-11.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-11.jpg",
     "shape": "circularImage"
   },
   {
@@ -117,7 +117,7 @@ var data_confnetwork = {
     "group": "서울대",
     "group_a": "서울대",
     "group_b": "경제학과",
-    "image": "img/intro-net-17.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-17.jpg",
     "shape": "circularImage"
   },
   {
@@ -129,7 +129,7 @@ var data_confnetwork = {
     "group": "서울대",
     "group_a": "서울대",
     "group_b": "경제학과",
-    "image": "img/intro-net-02.jpg",
+    "image": "https://img.khan.co.kr/spko/storytelling/2021/network/intro-net-02.jpg",
     "shape": "circularImage"
   }
 ],
